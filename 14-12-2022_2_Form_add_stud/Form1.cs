@@ -16,6 +16,19 @@ namespace _14_12_2022_2_Form_add_stud
         {
         public string? _name;
         public string? _soneme;
-        public 
+        public string _group;
+
+        Student() { }
+        Student (string? name, string? soneme, string group)
+        {
+            _name = name;
+            _soneme = soneme;
+            _group = group;
+        }
+
+        public override string ToString()
+        {
+            return $"Имя:{_name}, Фамилия:{_soneme}, Группа:{_group}";
+        }
     }
 }
