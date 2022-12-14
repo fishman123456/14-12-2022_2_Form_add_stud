@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button1_Load = new System.Windows.Forms.Button();
-            this.button2_Save = new System.Windows.Forms.Button();
+            this.button2_Save_Too_File = new System.Windows.Forms.Button();
             this.button3_Add = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1_Exit = new System.Windows.Forms.Button();
@@ -46,17 +46,17 @@
             this.button1_Load.UseVisualStyleBackColor = true;
             this.button1_Load.Click += new System.EventHandler(this.button1_Load_Click);
             // 
-            // button2_Save
+            // button2_Save_Too_File
             // 
-            this.button2_Save.Enabled = false;
-            this.button2_Save.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2_Save.Location = new System.Drawing.Point(303, 107);
-            this.button2_Save.Name = "button2_Save";
-            this.button2_Save.Size = new System.Drawing.Size(100, 50);
-            this.button2_Save.TabIndex = 1;
-            this.button2_Save.Text = "Сохранить";
-            this.button2_Save.UseVisualStyleBackColor = true;
-            this.button2_Save.Click += new System.EventHandler(this.button2_Save_Click);
+            this.button2_Save_Too_File.Enabled = false;
+            this.button2_Save_Too_File.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2_Save_Too_File.Location = new System.Drawing.Point(303, 107);
+            this.button2_Save_Too_File.Name = "button2_Save_Too_File";
+            this.button2_Save_Too_File.Size = new System.Drawing.Size(100, 50);
+            this.button2_Save_Too_File.TabIndex = 1;
+            this.button2_Save_Too_File.Text = "Сохранить в файл";
+            this.button2_Save_Too_File.UseVisualStyleBackColor = true;
+            this.button2_Save_Too_File.Click += new System.EventHandler(this.button2_Save_Click);
             // 
             // button3_Add
             // 
@@ -97,7 +97,7 @@
             this.Controls.Add(this.button1_Exit);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3_Add);
-            this.Controls.Add(this.button2_Save);
+            this.Controls.Add(this.button2_Save_Too_File);
             this.Controls.Add(this.button1_Load);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -110,7 +110,7 @@
         #endregion
 
         private Button button1_Load;
-        private Button button2_Save;
+        private Button button2_Save_Too_File;
         private Button button3_Add;
         private TextBox textBox1;
         private Button button1_Exit;

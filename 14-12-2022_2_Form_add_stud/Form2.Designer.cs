@@ -36,6 +36,7 @@
             this.comboBox1_Group = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1_Save = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -111,11 +112,21 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Дата Рождения";
             // 
+            // button1_Save
+            // 
+            this.button1_Save.Location = new System.Drawing.Point(68, 390);
+            this.button1_Save.Name = "button1_Save";
+            this.button1_Save.Size = new System.Drawing.Size(100, 50);
+            this.button1_Save.TabIndex = 8;
+            this.button1_Save.Text = "Сохранить";
+            this.button1_Save.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(241, 463);
+            this.Controls.Add(this.button1_Save);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.comboBox1_Group);
@@ -141,5 +152,6 @@
         private ComboBox comboBox1_Group;
         private DateTimePicker dateTimePicker1;
         private Label label4;
+        private Button button1_Save;
     }
 }
