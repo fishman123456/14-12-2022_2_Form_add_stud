@@ -29,12 +29,14 @@ namespace _14_12_2022_2_Form_add_stud
 
         private void button3_Add_Click(object sender, EventArgs e)
         {
+            Form2 f = new Form2();
+            f.ShowDialog();
 
         }
 
         private void button1_Exit_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
     class Student 
