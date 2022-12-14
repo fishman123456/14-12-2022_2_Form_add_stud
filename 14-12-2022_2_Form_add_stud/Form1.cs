@@ -11,6 +11,31 @@ namespace _14_12_2022_2_Form_add_stud
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Load_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Save_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Add_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Exit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     class Student 
         {
