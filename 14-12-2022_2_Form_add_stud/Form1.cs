@@ -12,10 +12,7 @@ namespace _14_12_2022_2_Form_add_stud
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void button1_Load_Click(object sender, EventArgs e)
         {
@@ -31,31 +28,28 @@ namespace _14_12_2022_2_Form_add_stud
         {
             Form2 f = new Form2();
             f.ShowDialog();
-
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+               // listBoxStudents.Items.Add();
+            }
+           
         }
 
         private void button1_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-    }
-    class Student 
-        {
-        public string? _name;
-        public string? _soneme;
-        public string _group;
 
-        Student() { }
-        Student (string? name, string? soneme, string group)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _name = name;
-            _soneme = soneme;
-            _group = group;
+
         }
 
-        public override string ToString()
+        private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            return $"Имя:{_name}, Фамилия:{_soneme}, Группа:{_group}";
+
         }
     }
+   
+    
 }

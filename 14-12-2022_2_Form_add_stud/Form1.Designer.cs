@@ -31,8 +31,9 @@
             this.button1_Load = new System.Windows.Forms.Button();
             this.button2_Save_Too_File = new System.Windows.Forms.Button();
             this.button3_Add = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1_Exit = new System.Windows.Forms.Button();
+            this.listBoxStudents = new System.Windows.Forms.ListBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // button1_Load
@@ -69,15 +70,6 @@
             this.button3_Add.UseVisualStyleBackColor = true;
             this.button3_Add.Click += new System.EventHandler(this.button3_Add_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 315);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // button1_Exit
             // 
             this.button1_Exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -89,13 +81,28 @@
             this.button1_Exit.UseVisualStyleBackColor = true;
             this.button1_Exit.Click += new System.EventHandler(this.button1_Exit_Click);
             // 
+            // listBoxStudents
+            // 
+            this.listBoxStudents.FormattingEnabled = true;
+            this.listBoxStudents.ItemHeight = 15;
+            this.listBoxStudents.Location = new System.Drawing.Point(0, 0);
+            this.listBoxStudents.Name = "listBoxStudents";
+            this.listBoxStudents.Size = new System.Drawing.Size(297, 319);
+            this.listBoxStudents.TabIndex = 4;
+            this.listBoxStudents.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(427, 387);
+            this.Controls.Add(this.listBoxStudents);
             this.Controls.Add(this.button1_Exit);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3_Add);
             this.Controls.Add(this.button2_Save_Too_File);
             this.Controls.Add(this.button1_Load);
@@ -103,7 +110,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -112,7 +118,8 @@
         private Button button1_Load;
         private Button button2_Save_Too_File;
         private Button button3_Add;
-        private TextBox textBox1;
         private Button button1_Exit;
+        private ListBox listBoxStudents;
+        private OpenFileDialog openFileDialog1;
     }
 }

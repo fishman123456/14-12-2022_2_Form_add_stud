@@ -37,6 +37,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.button1_Save = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -120,6 +121,12 @@
             this.button1_Save.TabIndex = 8;
             this.button1_Save.Text = "Сохранить";
             this.button1_Save.UseVisualStyleBackColor = true;
+            this.button1_Save.Click += new System.EventHandler(this.button1_Save_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // Form2
             // 
@@ -153,5 +160,6 @@
         private DateTimePicker dateTimePicker1;
         private Label label4;
         private Button button1_Save;
+        private OpenFileDialog openFileDialog1;
     }
 }
