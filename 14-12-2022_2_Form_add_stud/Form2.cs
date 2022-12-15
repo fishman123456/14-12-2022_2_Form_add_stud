@@ -43,9 +43,15 @@ namespace _14_12_2022_2_Form_add_stud
         private void button1_Save_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void Form2_Load_1(object sender, EventArgs e)
         {
 
         }

@@ -27,7 +27,7 @@ namespace _14_12_2022_2_Form_add_stud
         private void button3_Add_Click(object sender, EventArgs e)
         {
             Form2 f = new Form2();
-            f.ShowDialog();
+           // f.ShowDialog();
             if (f.ShowDialog() == DialogResult.OK)
             {
                listBoxStudents.Items.Add(f.ST);
