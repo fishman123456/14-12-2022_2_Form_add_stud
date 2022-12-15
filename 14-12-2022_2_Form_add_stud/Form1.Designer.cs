@@ -39,7 +39,7 @@
             // button1_Load
             // 
             this.button1_Load.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1_Load.Location = new System.Drawing.Point(303, 25);
+            this.button1_Load.Location = new System.Drawing.Point(405, 29);
             this.button1_Load.Name = "button1_Load";
             this.button1_Load.Size = new System.Drawing.Size(100, 50);
             this.button1_Load.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             this.button2_Save_Too_File.Enabled = false;
             this.button2_Save_Too_File.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2_Save_Too_File.Location = new System.Drawing.Point(303, 107);
+            this.button2_Save_Too_File.Location = new System.Drawing.Point(405, 111);
             this.button2_Save_Too_File.Name = "button2_Save_Too_File";
             this.button2_Save_Too_File.Size = new System.Drawing.Size(100, 50);
             this.button2_Save_Too_File.TabIndex = 1;
@@ -62,7 +62,7 @@
             // button3_Add
             // 
             this.button3_Add.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3_Add.Location = new System.Drawing.Point(303, 186);
+            this.button3_Add.Location = new System.Drawing.Point(405, 190);
             this.button3_Add.Name = "button3_Add";
             this.button3_Add.Size = new System.Drawing.Size(100, 50);
             this.button3_Add.TabIndex = 2;
@@ -73,7 +73,7 @@
             // button1_Exit
             // 
             this.button1_Exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1_Exit.Location = new System.Drawing.Point(303, 265);
+            this.button1_Exit.Location = new System.Drawing.Point(405, 269);
             this.button1_Exit.Name = "button1_Exit";
             this.button1_Exit.Size = new System.Drawing.Size(100, 50);
             this.button1_Exit.TabIndex = 3;
@@ -87,7 +87,7 @@
             this.listBoxStudents.ItemHeight = 15;
             this.listBoxStudents.Location = new System.Drawing.Point(0, 0);
             this.listBoxStudents.Name = "listBoxStudents";
-            this.listBoxStudents.Size = new System.Drawing.Size(297, 319);
+            this.listBoxStudents.Size = new System.Drawing.Size(378, 319);
             this.listBoxStudents.TabIndex = 4;
             this.listBoxStudents.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 387);
+            this.ClientSize = new System.Drawing.Size(514, 359);
             this.Controls.Add(this.listBoxStudents);
             this.Controls.Add(this.button1_Exit);
             this.Controls.Add(this.button3_Add);
