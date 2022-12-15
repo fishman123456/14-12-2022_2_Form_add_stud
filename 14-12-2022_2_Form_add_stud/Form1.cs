@@ -30,7 +30,7 @@ namespace _14_12_2022_2_Form_add_stud
             f.ShowDialog();
             if (f.ShowDialog() == DialogResult.OK)
             {
-               // listBoxStudents.Items.Add();
+               listBoxStudents.Items.Add(f.ST);
             }
            
         }
