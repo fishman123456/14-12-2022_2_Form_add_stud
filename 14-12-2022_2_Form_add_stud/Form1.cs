@@ -1,5 +1,6 @@
 namespace _14_12_2022_2_Form_add_stud
 {
+    using System.Xml.Serialization;
     public partial class Form1 : Form
     {
         public Form1()
@@ -21,7 +22,30 @@ namespace _14_12_2022_2_Form_add_stud
 
         private void button2_Save_Click(object sender, EventArgs e)
         {
+            // сделать сохранение в файл
+            int number = listBoxStudents.Items.Count;
+            // создаем список для сохранения обьектов
+            List<Student> students = new List<Student>();   
 
+            foreach (var item in listBoxStudents.Items)
+            {
+                
+                students.Add((Student)item);
+            }
+
+            // объект для сериализации
+
+
+            // передаем в конструктор тип класса Person
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Student>));
+
+            // получаем поток, куда будем записывать сериализованный объект
+            using (FileStream fs = new FileStream("Student.xml", FileMode.OpenOrCreate))
+            {
+                xmlSerializer.Serialize(fs, students);
+
+                MessageBox.Show("Обьект записан");
+            }
         }
 
         private void button3_Add_Click(object sender, EventArgs e)
@@ -31,6 +55,11 @@ namespace _14_12_2022_2_Form_add_stud
             if (f.ShowDialog() == DialogResult.OK)
             {
                listBoxStudents.Items.Add(f.ST);
+            }
+            if (listBoxStudents.Items.Count > 0)
+            {
+                button1_Load.Enabled = false;
+                button2_Save_Too_File.Enabled = true;
             }
            
         }
