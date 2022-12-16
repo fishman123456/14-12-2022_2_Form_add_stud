@@ -17,7 +17,18 @@ namespace _14_12_2022_2_Form_add_stud
 
         private void button1_Load_Click(object sender, EventArgs e)
         {
+            XmlSerializer formatter = new XmlSerializer(typeof(List<Student>));
+            List<Student> students =null;
 
+            using (Stream fs = File.OpenRead("Student.xml")) 
+            {
+
+                students = (List<Student>)formatter.Deserialize(fs);
+            }
+            foreach (var item in students)
+            {
+                listBoxStudents.Items.Add(item);
+            }
         }
 
         private void button2_Save_Click(object sender, EventArgs e)
