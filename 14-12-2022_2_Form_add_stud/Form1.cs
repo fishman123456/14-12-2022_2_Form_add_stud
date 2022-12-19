@@ -7,7 +7,9 @@ namespace _14_12_2022_2_Form_add_stud
         public Form1()
         {
             InitializeComponent();
+            // фильтр для загрузки файлов
             openFileDialog1.Filter = "Text files(*.xml)|*.xml|All files(*.*)|*.*";
+            // фильтр для сохранения файлов
             saveFileDialog1.Filter = "Text files(*.xml)|*.xml|All files(*.*)|*.*";
         }
 
@@ -20,6 +22,7 @@ namespace _14_12_2022_2_Form_add_stud
 
         private void button1_Load_Click(object sender, EventArgs e)
         {
+            // проверка на открытие папки
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
                 return;
             // получаем выбранный файл
@@ -29,10 +32,10 @@ namespace _14_12_2022_2_Form_add_stud
             // Создаём серриализацию в XML
             XmlSerializer formatter = new XmlSerializer(typeof(List<Student>));
             List<Student> students =null;
+            // создаем исключение чтобы программа не рушилась если не XML
             try
             {
 
-           
             using (Stream fs = File.OpenRead(filename)) 
             {
 
