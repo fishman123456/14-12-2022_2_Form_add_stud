@@ -88,6 +88,7 @@
             this.listBoxStudents.ItemHeight = 15;
             this.listBoxStudents.Location = new System.Drawing.Point(0, 0);
             this.listBoxStudents.Name = "listBoxStudents";
+            this.listBoxStudents.ScrollAlwaysVisible = true;
             this.listBoxStudents.Size = new System.Drawing.Size(378, 319);
             this.listBoxStudents.TabIndex = 4;
             this.listBoxStudents.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
