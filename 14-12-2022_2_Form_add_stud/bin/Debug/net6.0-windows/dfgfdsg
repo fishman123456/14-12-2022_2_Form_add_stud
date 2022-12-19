@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Student>
-    <Name>Денис</Name>
-    <Fname>Фишман</Fname>
-    <BirthDay>1980-11-30T20:55:31</BirthDay>
-    <Group>ЗЭПА</Group>
+    <Name>65454</Name>
+    <Fname>6666</Fname>
+    <BirthDay>2022-02-10T10:00:21</BirthDay>
+    <Group>ЗГП</Group>
   </Student>
-  <Student>
+</ArrayOfStudent><Student>
     <Name>Юльчик</Name>
     <Fname>Добрая</Fname>
     <BirthDay>1962-12-16T09:46:08</BirthDay>
@@ -19,15 +19,9 @@
     <Group>ЗГП</Group>
   </Student>
   <Student>
-    <Name>gvcb</Name>
-    <Fname>vcbcvb</Fname>
-    <BirthDay>2022-12-01T10:02:40</BirthDay>
-    <Group>ЗГП</Group>
-  </Student>
-  <Student>
-    <Name>vcbv</Name>
-    <Fname>cxvbxcb</Fname>
-    <BirthDay>2022-11-29T10:03:21</BirthDay>
-    <Group>ЗМЧМ</Group>
+    <Name>++++</Name>
+    <Fname>----</Fname>
+    <BirthDay>0001-01-01T00:00:00</BirthDay>
+    <Group>ЗЭПА</Group>
   </Student>
 </ArrayOfStudent>

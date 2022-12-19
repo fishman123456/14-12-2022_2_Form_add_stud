@@ -30,4 +30,10 @@
     <BirthDay>2022-11-29T10:03:21</BirthDay>
     <Group>ЗМЧМ</Group>
   </Student>
+  <Student>
+    <Name>dfddf</Name>
+    <Fname>hdfghfgh</Fname>
+    <BirthDay>2022-11-30T10:08:42</BirthDay>
+    <Group>ЗГП</Group>
+  </Student>
 </ArrayOfStudent>
